@@ -1,27 +1,30 @@
 {
-    "manifest_version": 3,
-    "name": "Thirsty Turtle",
-    "version": "1.0",
-    "description" : "Wellness Reminder",
-    "content_scripts": [
-        {
-            "matches": ["<all_urls>"],
-            "css": ["style.css"],
-            "js": ["./index.js"]
-        }
-    ]
-    ,
-    
-    "icons":
-        {
-        "16": "assets/sea-turtle.png",
-        "32": "assets/sea-turtle.png",
-        "48": "assets/sea-turtle.png"
-       
-        }
-    ,
-    "action":{
-        "default_popup": "index.html"
-      }
-    
+  "manifest_version": 3,
+  "name": "Thirsty Turtle",
+  "version": "1.0",
+  "description": "Wellness Reminder",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["style.css"],
+      "js": ["./index.js"]
     }
+  ],
+  "icons": {
+    "16": "assets/sea-turtle.png",
+    "32": "assets/sea-turtle.png",
+    "48": "assets/sea-turtle.png",
+    "128": "assets/sea-turtle.png"
+  },
+  "action": {
+    "default_popup": "index.html",
+
+    "default_icon": {
+      "16": "assets/sea-turtle.png",
+      "48": "assets/sea-turtle.png",
+      "128": "assets/sea-turtle.png"
+    }
+  },
+
+  "permissions": ["storage"]
+}
