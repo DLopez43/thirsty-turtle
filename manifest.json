@@ -14,7 +14,9 @@
     
     "icons":
         {
-        "16": "assets/sea-turtle.png"
+        "16": "assets/sea-turtle.png",
+        "32": "assets/sea-turtle.png",
+        "48": "assets/sea-turtle.png"
        
         }
     ,
